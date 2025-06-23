@@ -1,0 +1,332 @@
+body {
+
+  margin: 0;
+
+  font-family: 'Cairo', sans-serif;
+
+  background: linear-gradient(to bottom, #fff5f8, #ffeef2),
+
+    url('') no-repeat center 20%;
+
+  background-size: 150px 150px;
+
+  background-repeat: no-repeat;
+
+  color: #222;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+}
+
+.navbar {
+
+  background-color: #ffb6c1;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-list {
+
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 40px;
+
+}
+
+.nav-list li a {
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  transition: color 0.3s;
+
+}
+
+.nav-list li a:hover {
+
+  color: #800000;
+
+}
+
+.hero-section {
+
+  background: url('https://www.rosepedia.com/wp-content/uploads/2019/06/cfeae5b74dd7f914/whitelilyrosespictures.jpeg ')
+
+    no-repeat center center/cover;
+
+  height: 60vh;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+.hero-section .overlay {
+
+  background-color: rgba(255, 182, 193, 0.6);
+
+  color: #fff;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(3px);
+
+}
+
+.content {
+
+  max-width: 900px;
+
+  margin: 40px auto;
+
+  padding: 0 20px;
+
+  position: relative;
+
+}
+
+.section {
+
+  background-color: #fff;
+
+  margin-bottom: 30px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
+
+  transition: transform 0.3s ease;
+
+  border: 2px dashed #ffe4e1;
+
+}
+
+.section:hover {
+
+  transform: scale(1.01);
+
+}
+
+.section h2 {
+
+  color: #e91e63;
+
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid #f8bbd0;
+
+  padding-bottom: 10px;
+
+  font-size: 24px;
+
+}
+
+.section p {
+
+  font-size: 17px;
+
+  line-height: 2;
+
+  color: #444;
+
+}
+
+.footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  background-color: #ffe4ec;
+
+  color: #444;
+
+  font-size: 14px;
+
+  border-top: 1px solid #f3c2d0;
+
+}
+.bubu-img {
+
+  position: fixed;
+
+  bottom: 20px;
+
+  left: 20px;
+
+  width: 140px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  z-index: 999;
+
+}
+.bubu-img {
+
+  animation: bounce 3s infinite ease-in-out;
+
+}
+.healing-word {
+
+  font-family: 'Cairo', sans-serif;
+
+  color: #e91e63;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+}
+
+.progress-container::after {
+
+  content: attr(data-text);
+
+  display: block;
+
+  font-size: 0.7rem;
+
+  color: #ff6b8b;
+
+  margin-top: 5px;
+
+  text-align: center;
+
+}
+.cat-section {
+
+  background: #fff9fb !important;
+
+  border: 2px dashed #ffb6c1 !important;
+
+  text-align: right;
+
+}
+
+.cat-content {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+.cat-image {
+
+  width: 200px;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+
+  border: 3px solid #ffb6c1;
+
+}
+
+.cat-text p {
+
+  margin-bottom: 10px;
+
+  line-height: 1.6;
+
+}
+
+/* للهواتف */
+
+@media (max-width: 768px) {
+
+  .cat-content {
+
+    flex-direction: column;
+
+  }
+
+  
+
+  .cat-image {
+
+    width: 150px;
+
+    height: 150px;
+
+  }
+
+}
+.music-container {
+
+  text-align: center;
+
+  margin-top: 40px;
+
+}
+
+.music-btn {
+
+  background-color: #ffdbe9;
+
+  border: none;
+
+  color: #333;
+
+  padding: 12px 24px;
+
+  font-size: 18px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+}
+
+.music-btn:hover {
+
+  background-color: #ffc4db;
+
+}
